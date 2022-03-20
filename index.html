@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>X-Client</title>
+
+  <link rel="stylesheet" href="style.css" />
+
+  <link rel="icon"
+    href="https://cdn.discordapp.com/attachments/952088871066300447/952092600800788530/icon.ico.png" />
+
+  <bgsound src="https://cdn.discordapp.com/attachments/954298244475813963/954298383827365898/bensound-betterdays.mp3"
+    loop="infinite">
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+    <link rel="stylesheet" type="text/css" href="./aos.css" />
+</head>
+
+<body>
+  <div id="particles-js"></div>
+
+  <div class="scroll-up-btn">
+    <i class="fas fa-angle-up"></i>
+  </div>
+
+  <nav class="navbar">
+    <div class="max-width">
+      <div class="logo">
+        <a href="#home">X-Client<span></span></a>
+      </div>
+
+      <ul class="menu">
+        <li><a href="#home" class="menu-btn">Home</a></li>
+
+        <li>
+          <a href="#features" class="menu-btn" class="menu-btn">Features</a>
+        </li>
+
+        <li><a href="#stats" class="menu-btn">Stats</a></li>
+
+        <li><a href="#contributors" class="menu-btn">Contributors</a></li>
+
+        <li><a href="discord.html" class="menu-btn">Server</a></li>
+
+        <li><a href="" class="menu-btn">Login</a></li>
+      </ul>
+
+      <div class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+
+  <section class="home" id="home">
+    <div class="max-width">
+      <div class="home-content">
+        <div class="text-1">Hello, I am</div>
+
+        <div class="text-2">X-Client</div>
+
+        <div class="text-3">And I am <span class="typing"></span></div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="features" id="features">
+    <div class="max-width">
+      <h2 class="title">My Ups</h2>
+
+      <div class="features-content">
+        <div class="card">
+          <div class="box">
+            <i class="fas fa-cogs"></i>
+
+            <div class="text">Customization</div>
+
+            <p>
+              Customize your Discord server using welcome and leave messages,
+              level up system, custom commands, and much more!
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="box">
+            <i class="fas fa-code"></i>
+
+            <div class="text">Games</div>
+
+            <p>
+              Tons of games waiting for you to play!
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="box">
+            <i class="fas fa-music"></i>
+
+            <div class="text">Music</div>
+
+            <p>
+              Extremely high quality music system where you can play songs in a Discord voice chat.
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="box">
+            <i class="fas fa-lock"></i>
+
+            <div class="text">Moderation</div>
+
+            <p>
+              Protect your Discord server with the bot's robust moderation and
+              powerful commands to improve and speed up moderation.
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="box">
+            <i class="fas fa-terminal"></i>
+
+            <div class="text">Web Dashboard</div>
+
+            <p>
+              Configure each and every setting from the Web Dashboard of this bot!!
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="box">
+            <i class="fas fa-arrow-up"></i>
+
+            <div class="text">Level up System</div>
+
+            <p>
+              Make your server more active by rewarding users points, roles,
+              and more for being active.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="stats" id="stats">
+    <div class="max-width">
+      <h2 class="title">
+        My Stats
+      </h2>
+
+      <div class="stats-content">
+        <div class="card" style="width: calc(50% - 20px);">
+          <div class="box">
+            <i class="fas fa-server"></i>
+
+            <div class="text">Downloads</div>
+
+            <p id="server-count">Loading....</p>
+          </div>
+        </div>
+
+        <div class="card" style="width: calc(50% - 20px);">
+          <div class="box">
+            <i class="fas fa-user"></i>
+
+            <div class="text">Users</div>
+
+            <p id="user-count">Loading....</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contributors" id="contributors">
+    <div class="max-width">
+      <h2 class="title">
+        Staff
+      </h2>
+      <div class="carousel owl-carousel">
+
+        <div class="cardd">
+          <div class="boxx">
+            <img src="https://cdn.discordapp.com/avatars/771966730644881459/363bb9682f0b89f791a0161e0d4dd5c2.png?size=512" alt>
+            <div class="text">X-_-Z#0327</div>
+            <p>
+
+              <button class="badges owner">Owner</button>
+              <button class="badges developer">Developer</button>
+              <button class="badges designer">Designer</button>
+            </p>
+          </div>
+        </div>
+
+        <div class="cardd">
+          <div class="boxx">
+            <img src="https://cdn.discordapp.com/avatars/673625419613863949/c188bfb4e96655ef296017e60c1778dc.png?size=512" alt>
+            <div class="text">TheDuce#2964</div>
+            <p>
+              <button class="badges developer">Developer</button>
+            </p>
+          </div>
+        </div>
+
+        <div class="cardd">
+          <div class="boxx">
+            <img src="https://cdn.discordapp.com/avatars/736482645931720765/f6fdb8465dd0643fa903d385529ffadd.png?size=512" alt>
+            <div class="text">dev-0737#2744</div>
+            <p>
+              <button class="badges developer">Developer</button>
+              <button class="badges designer">Designer</button>
+            </p>
+          </div>
+        </div>
+
+        <div class="cardd">
+          <div class="boxx">
+            <img src="https://cdn.discordapp.com/avatars/827745783964499978/a_80572d4486233b4c73d1f259ec9cd75f.gif?size=512" alt>
+            <div class="text">Thomas Shelby#6969</div>
+            <p>
+              <button class="badges developer">Developer</button>
+              <button class="badges designer">Designer</button>
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    </div>
+  </section>
+
+  <div class="loader-wrapper">
+    <img width="200" height="200" src="https://cdn.discordapp.com/attachments/952088871066300447/952092600800788530/icon.ico.png"
+      alt="Loading..." />
+
+    <div class="longfazers">
+      <span></span>
+
+      <span></span>
+
+      <span></span>
+
+      <span></span>
+    </div>
+  </div>
+
+  <footer>
+    <a style="display: none;" href="//www.dmca.com/Protection/Status.aspx?ID=04da08e3-40f5-4320-8093-86b1c519bf13"
+      title="DMCA.com Protection Status" class="dmca-badge">
+      <img src="https://images.dmca.com/Badges/dmca-badge-w150-5x1-07.png?ID=04da08e3-40f5-4320-8093-86b1c519bf13"
+        alt="DMCA.com Protection Status" /></a>
+    <script src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js"></script>
+
+    <a style="display: none;" href="https://www.dmca.com/compliance/Mikuni.gq"
+      title="DMCA Compliance information for Mikuni.gq"><img
+        src="https://www.dmca.com/img/dmca-compliant-grayscale.png" /></a>
+
+    <span>Made by X-Client Team
+      ><br />Copyright <span class="far fa-copyright"></span> X-Client 2022</span>
+  </footer>
+
+  <script src="./aos.js"></script>
+
+  <script type="text/javascript">
+    AOS.init({
+      duration: 1000
+    });
+  </script>
+
+  <script src="script.js"></script>
+
+  <script>
+    $(window).on("load", function () {
+      $(".loader-wrapper").fadeOut("slow");
+    });
+  </script>
+
+  <script src="./particles.js"></script>
+  <script src="./app.js"></script>
+</body>
+
+</html>
