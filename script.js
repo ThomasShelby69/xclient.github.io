@@ -21,18 +21,6 @@ $(document).ready(function() {
       $('.menu-btn i').toggleClass("active");
     })
   
-    var typed = new Typed('.typing', {
-      strings: [
-        "a krunker client",
-        "one of the best client",
-        "easy to use",
-        "full of features",
-        "for you",
-      ],
-      typeSpeed: 120,
-      backSpeed: 80,
-      loop: true,
-    })
     $('.carousel').owlCarousel({
       margin: 20,
       loop: true,
